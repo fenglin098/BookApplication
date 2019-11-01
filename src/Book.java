@@ -32,20 +32,24 @@ public class Book {
     public String getDescription(){
         return this.description;
     }
-    public void setDescription(){
+    public void setDescription(String description){
         this.description=description;
     }
     public double getPrice(){
         return this.price;
     }
-    public void setPrice{
+    public void setPrice(double price){
         this.price=price;
     }
     public String getIsInStock(){
-        return this.getIsInStock();
+        return this.isInStock;
     }
-    public void setIsInStock(){
+    public void setIsInStock(String isInStock){
         this.isInStock=isInStock;
     }
 
+    public double total(int x){
+        double total= x*20;
+        return total;
+    }
 }
