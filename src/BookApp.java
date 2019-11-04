@@ -31,7 +31,9 @@ public class BookApp {
         System.out.println("What is the SKU of the book you are looking for? ");
         Scanner sc = new Scanner(System.in);
         String userInput = sc.next();
-
+        switch (userInput){
+            case "Orcl1003" = database.get(0).getDisplayText();
+        }
         database.get(0).getDisplayText();
     }
 }
