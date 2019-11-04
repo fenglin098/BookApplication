@@ -5,16 +5,18 @@ public class Book {
     private String description;
     private double price;
     private String isInStock;
+    private String sku;
 
     public Book(){
 
     }
-    public Book(String title, String author, String description, double price, String isInStock){
+    public Book(String title, String author, String description, double price, String isInStock, String sku){
         this.title = title;
         this.author = author;
         this.description = description;
         this.price = price;
         this.isInStock = isInStock;
+        this.sku = sku;
 
     }
     public String getTitle(){
@@ -48,8 +50,20 @@ public class Book {
         this.isInStock=isInStock;
     }
 
+    public String getSku(){
+        return this.sku;
+    }
+
+    public void setSku(String sku){
+        this.sku = sku;
+    }
+
     public double total(int x){
         double total= x*20;
         return total;
+    }
+
+    public void getDisplayText(){
+        System.out.println(author+", "+title+", "+description);
     }
 }
